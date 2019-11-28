@@ -10209,4 +10209,25 @@
   .list-group {
     font-size: 0.930125rem;
   }
-  
+
+fieldset {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-top: 0.35em;
+	padding-bottom: 0.625em;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	border: 2px groove;
+	background-color: #293d3d;
+}
+
+h1 {
+	text-align: center;
+}
+
+.jumbotron {
+	background-image:url(http://img.over-blog-kiwi.com/2/15/09/43/20180107/ob_9bb1c4_futsal.jpg);
+}

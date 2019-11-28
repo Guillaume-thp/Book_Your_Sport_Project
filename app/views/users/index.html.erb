@@ -1,20 +1,24 @@
-<p id="notice"><%= notice %></p>
-
-<div class=text-center>
-<br><br><br><br><br><br>
-<h1>Book Your Sport</h1>
-<h2>Réserve ton terrain en quelques clics !<h2>
-<br><br>
-<form>
-  <div>
-    <input type="search" id="maRecherche" name="q"
-    placeholder="Rechercher sur le site…" size="30">
-    <button>Rechercher</button>
-  </div>
-</form>
+<div class="jumbotron">
+  <h1 class="display-2">Book Your Sport</h1>
+  <p class="lead text-center">Réserve ton terrain en quelques clics!</p>
+  <hr class="my-4">
+    <fieldset>
+      <select class="custom-select" width="25%">
+        <option selected="">Choisis ton sport</option>
+        <option value="0">Football</option>
+        <option value="1">Basket-ball</option>
+        <option value="2">Volley-ball</option>
+      </select>
+      <form>
+      <input type="date">
+      </form>
+      <select class="custom-select">
+        <option selected="">Choisis ta ville</option>
+        <option value="0">Paris</option>
+        <option value="1">Lyon</option>
+        <option value="2">Marseille</option>
+      </select>
+      <input type="submit" value="Trouver une salle" class="btn btn-success btn-lg">
+    </fieldset>
 </div>
-
-
- 
-
 
