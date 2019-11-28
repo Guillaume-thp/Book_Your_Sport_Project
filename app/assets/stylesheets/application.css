@@ -49,6 +49,13 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
+
+  body {
+    color:black;
+    background-color:white;
+    background-image:url(foot.jpeg);
+    }
+
   html {
     font-family: sans-serif;
     line-height: 1.15;
