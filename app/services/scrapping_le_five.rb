@@ -2,9 +2,6 @@ require 'nokogiri'
 require 'mechanize'
 
 class ScrappingLeFive
-  def initialize
-  end
-
   def perform
     agent = Mechanize.new
 
@@ -16,7 +13,9 @@ class ScrappingLeFive
     puts ENV["USER_PASSWORD"]
     email_field.value = ENV["USER_EMAIL"] # Set the value in the email field
     password_field.value = ENV["USER_PASSWORD"] # Set the value in the password field
+    binding.pry
     page = agent.submit(page.forms.last) # Submit the result for connect in var
+    binding.pry
 
     # Test for detect link with Réserver
     # agent.page.links.find { |link| link.text == 'Réserver' }
@@ -40,6 +39,9 @@ class ScrappingLeFive
     # Index 0 for ID : 3 => PADEL
     # Index 1 for ID : 1 => FOOT
     type_sport = list.field_with(name: 'reservations_terrains_typesport')
+    
+    binding.pry
+    
     type_sport.value = type_sport.options[1]
 
     # Type de terrains
