@@ -2352,3 +2352,274 @@ ActionView::Template::Error (unknown error: cannot find Chrome binary
 app/services/scrap.rb:16:in `new'
 app/services/scrap.rb:16:in `perform'
 app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__734265328595782194_47204866647560'
+Started GET "/" for 127.0.0.1 at 2019-12-02 17:00:35 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (322.8ms)
+Completed 500 Internal Server Error in 335ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (unknown error: cannot find Chrome binary
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 5.0.0-36-generic x86_64)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:16:in `new'
+app/services/scrap.rb:16:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__3868960565577237089_47335070103400'
+Started GET "/" for 127.0.0.1 at 2019-12-02 20:32:39 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2700.6ms)
+Completed 500 Internal Server Error in 2712ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (unknown error: call function result missing 'value'
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 5.0.0-36-generic x86_64)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:20:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__841794103387508560_46999797290040'
+Started GET "/" for 127.0.0.1 at 2019-12-02 20:37:02 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2439.2ms)
+Completed 500 Internal Server Error in 2444ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (unknown error: call function result missing 'value'
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 5.0.0-36-generic x86_64)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:20:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__841794103387508560_46999793755200'
+Started GET "/" for 127.0.0.1 at 2019-12-02 20:41:01 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- pry):
+  
+app/services/scrap.rb:1:in `<top (required)>'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__841794103387508560_69955455088880'
+Started GET "/" for 127.0.0.1 at 2019-12-02 20:41:24 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- pry):
+  
+app/services/scrap.rb:1:in `<top (required)>'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___971487146596042387_47284294411320'
+Started GET "/" for 127.0.0.1 at 2019-12-02 20:41:41 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2333.8ms)
+Completed 500 Internal Server Error in 2347ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x00005604961a9b18>
+Did you mean?  try):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:21:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___4092771619356845124_47288839669360'
+Started GET "/" for 127.0.0.1 at 2019-12-02 20:43:18 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2019-12-02 20:45:34 +0100
+  Rendered users/index.html.erb within layouts/application (158527.6ms)
+Completed 401 Unauthorized in 158538ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-02 20:46:02 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2463.3ms)
+Completed 500 Internal Server Error in 2471ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (unknown error: call function result missing 'value'
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 5.0.0-36-generic x86_64)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:23:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___4558725908662172796_47033966879800'
+Started GET "/" for 127.0.0.1 at 2019-12-02 21:04:30 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- pry):
+  
+app/services/scrap.rb:1:in `<top (required)>'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___2485928935651041013_47268265279640'
+Started GET "/" for 127.0.0.1 at 2019-12-02 21:04:41 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (34586.3ms)
+Completed 500 Internal Server Error in 34591ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (timed out after 30 seconds, waiting for #<Watir::Div: located: false; {:class=>"reservation-header", :tag_name=>"div"}> to be located; Maybe look in an iframe?):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:46:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___2485928935651041013_47268246830900'
+Started GET "/" for 127.0.0.1 at 2019-12-02 21:05:53 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4129.3ms)
+Completed 500 Internal Server Error in 4132ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (element click intercepted: Element <div class="DayPicker-Day" tabindex="-1" role="gridcell" aria-label="Sat Dec ... 2019" aria-disabled="false" aria-selected="false">21</div> is not clickable at point (694, 273). Other element would receive the click: <div class="DayPicker-Months">...</div>
+  (Session info: headless chrome=78.0.3904.108)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:35:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___2485928935651041013_47268261954100'
+Started GET "/" for 127.0.0.1 at 2019-12-02 21:06:26 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4438.8ms)
+Completed 500 Internal Server Error in 4446ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (element click intercepted: Element <div class="DayPicker-Day" tabindex="-1" role="gridcell" aria-label="Sat Dec ... 2019" aria-disabled="false" aria-selected="false">21</div> is not clickable at point (694, 273). Other element would receive the click: <div class="DayPicker-Months">...</div>
+  (Session info: headless chrome=78.0.3904.108)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:35:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___2485928935651041013_70254801516300'
+Started GET "/" for 127.0.0.1 at 2019-12-02 21:07:14 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4531.8ms)
+Completed 500 Internal Server Error in 4537ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for #<Watir::Div: located: false; {:text=>"21", :tag_name=>"div"}>):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:34:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___2485928935651041013_70254796916380'
+Started GET "/" for 127.0.0.1 at 2019-12-02 21:07:37 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (119513.5ms)
+Completed 401 Unauthorized in 119525ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-02 21:09:45 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3926.4ms)
+Completed 200 OK in 4109ms (Views: 4104.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-02 21:10:04 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (33933.7ms)
+Completed 500 Internal Server Error in 33939ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (timed out after 30 seconds, waiting for #<Watir::Div: located: false; {:text=>"Puteaux", :tag_name=>"div"}> to be located; Maybe look in an iframe?):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:29:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___560071941576920604_70093874277020'
+Started GET "/" for 127.0.0.1 at 2019-12-02 21:10:49 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4033.9ms)
+Completed 200 OK in 4219ms (Views: 4213.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-02 21:10:58 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3978.2ms)
+Completed 200 OK in 3990ms (Views: 3988.9ms | ActiveRecord: 0.0ms)
+
+

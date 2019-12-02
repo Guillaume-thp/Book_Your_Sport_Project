@@ -1,3 +1,4 @@
+
 class Scrap
   def initialize
   end
@@ -25,11 +26,12 @@ idf = browser.path(id: "IDF")
 idf.double_click
 
 puteaux = browser.div(text: "Puteaux")
+return puteaux.text
 puteaux.double_click
 # cliquer sur la fleche droite du calendrier pour le mois suivant
  #browser.span(class:["DayPicker-NavButton", "DayPicker-NavButton--next"]).click
 
-
+binding.irb
 date = browser.div(text: "21") # Choisir le jour, A changer par la variable tiré du formulaire de recherche
 date.click
 
@@ -42,7 +44,7 @@ browser.element(:xpath => "/html/body/div/div/div/div[4]/div/div/div[2]/div[2]/d
 #Type de terrain. Remplacer un tiret par un underscore dans un attribut.
 browser.input(data_label:"3 contre 3").click
 
-return browser.div(class: "reservation-header").text
+#return browser.element(:xpath => "//div[3]/span[2]").text #browser.div(class: "reservation-header").text
   end
 end
 
