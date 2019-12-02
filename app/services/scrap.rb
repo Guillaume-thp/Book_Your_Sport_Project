@@ -4,7 +4,16 @@ class Scrap
 
 
   def perform
-    browser = Watir::Browser.new(:firefox)
+
+  	opts = {
+    headless: true
+  }
+
+  if (chrome_bin = ENV.fetch('GOOGLE_CHROME_SHIM', nil))
+    opts.merge!( options: {binary: chrome_bin})
+  end 
+
+browser = Watir::Browser.new :chrome, opts
 browser.goto 'https://my.urbansoccer.fr/user?goto=reserver'
 email_field = browser.text_field(type: 'email')
 password_field = browser.text_field(type: 'password')

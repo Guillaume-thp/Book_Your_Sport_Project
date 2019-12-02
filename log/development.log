@@ -2265,3 +2265,90 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-12-02 16:42:13 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Scrap::Watir):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:7:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__2550810986812995563_47019436799860'
+Started GET "/" for 127.0.0.1 at 2019-12-02 16:44:56 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Scrap::Watir):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:18:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___1047367463749914356_47329737009660'
+Started GET "/" for 127.0.0.1 at 2019-12-02 16:45:41 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Scrap::Watir):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:7:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___3750237335813539559_46961203117800'
+Started GET "/" for 127.0.0.1 at 2019-12-02 16:49:35 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (7718.6ms)
+Completed 200 OK in 7998ms (Views: 7992.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-02 16:50:57 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (331.0ms)
+Completed 500 Internal Server Error in 341ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (unknown error: cannot find Chrome binary
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 5.0.0-36-generic x86_64)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:16:in `new'
+app/services/scrap.rb:16:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__734265328595782194_47204866647560'
