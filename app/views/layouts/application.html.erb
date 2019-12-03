@@ -2,46 +2,64 @@
 <html>
 
 <head>
-    <title>BYS</title>
+    <link rel="icon" type="image/png" href="assets/logo_BYS.png" />
+    <title>Book Your Sport</title>
     <%= csrf_meta_tags %>
         <%= csp_meta_tag %>
-
             <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
                 <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="sticky ">
+        <nav class="navbar navbar-expand topnav bg-#fff">
+            <%= image_tag("logo_BYS.png", :alt => "BYS logo", :class => "img-s") %>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li> 
-            </ul>
-        
-            <ul><%= link_to "Sign in",  new_user_session_path %></ul>
-            <ul><%= link_to "Sign up", new_user_registration_path %></ul>
-        </div>
+                <%=link_to "Accueil", root_path %>
+
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+
+                    <%= link_to "L'équipe", root_path %>
+
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+
+                        <%= link_to "A propos", root_path %>
+
+                            <div class="right">
+                                <% if user_signed_in? %>
+                                    <%= link_to "Déconnexion", destroy_user_session_path, method: :delete %>
+                                        <% else %>
+                                            <%= link_to "Connexion", new_user_session_path %>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <%= link_to "Inscription", new_user_registration_path %>
+                                                    <% end %>
+                            </div>
+    </div>
+    </div>
     </nav>
 
 </header>
 
 <body>
     <%= yield %>
+
 </body>
 
 </html>
