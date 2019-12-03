@@ -2623,3 +2623,199 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 3990ms (Views: 3988.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-12-03 10:43:40 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4555.3ms)
+Completed 200 OK in 4794ms (Views: 4789.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-03 10:45:28 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3657.8ms)
+Completed 500 Internal Server Error in 3666ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (element click intercepted: Element <div class="DayPicker-Day" tabindex="-1" role="gridcell" aria-label="Sat Dec ... 2019" aria-disabled="false" aria-selected="false">21</div> is not clickable at point (630, 273). Other element would receive the click: <div data-radium="true">...</div>
+  (Session info: headless chrome=78.0.3904.108)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:35:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__942101817470213733_47153269163820'
+Started GET "/" for 127.0.0.1 at 2019-12-03 10:50:53 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (43452.4ms)
+Completed 401 Unauthorized in 43456ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-03 10:51:40 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4103.1ms)
+Completed 500 Internal Server Error in 4110ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (element click intercepted: Element <div class="DayPicker-Day" tabindex="-1" role="gridcell" aria-label="Sat Dec ... 2019" aria-disabled="false" aria-selected="false">21</div> is not clickable at point (694, 273). Other element would receive the click: <div class="DayPicker-Months">...</div>
+  (Session info: headless chrome=78.0.3904.108)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:35:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___1928802597087105633_47329957730700'
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:00:35 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (177321.4ms)
+Completed 401 Unauthorized in 177324ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:03:51 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (345354.3ms)
+Completed 401 Unauthorized in 345361ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:13:37 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (93172.2ms)
+Completed 401 Unauthorized in 93180ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:15:24 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (35977.6ms)
+Completed 401 Unauthorized in 35985ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:16:06 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4432.7ms)
+Completed 500 Internal Server Error in 4441ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (element click intercepted: Element <div class="DayPicker-Day" tabindex="-1" role="gridcell" aria-label="Sat Dec ... 2019" aria-disabled="false" aria-selected="false">21</div> is not clickable at point (694, 273). Other element would receive the click: <div class="DayPicker-Months">...</div>
+  (Session info: headless chrome=78.0.3904.108)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:35:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__1225432851427156202_47109954555780'
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:16:32 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (38888.3ms)
+Completed 401 Unauthorized in 38891ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:17:15 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4580.1ms)
+Completed 500 Internal Server Error in 4587ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (element click intercepted: Element <div class="DayPicker-Day" tabindex="-1" role="gridcell" aria-label="Sat Dec ... 2019" aria-disabled="false" aria-selected="false">21</div> is not clickable at point (694, 273). Other element would receive the click: <div class="DayPicker-Months">...</div>
+  (Session info: headless chrome=78.0.3904.108)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:35:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___3379812029123672656_47020131755440'
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:18:22 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (194901.4ms)
+Completed 401 Unauthorized in 194907ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:21:42 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (47768.7ms)
+Completed 401 Unauthorized in 47777ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:22:38 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4713.1ms)
+Completed 200 OK in 4859ms (Views: 4854.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:23:16 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (34906.9ms)
+Completed 500 Internal Server Error in 34911ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (timed out after 30 seconds, waiting for #<Watir::HTMLElement: located: false; {:xpath=>"//div[3]/span[2]"}> to be located; Maybe look in an iframe?):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:45:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__1774704168940094013_70001592535340'
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:24:57 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:24:59 +0100
+  Rendered users/index.html.erb within layouts/application (494341.1ms)
+Completed 401 Unauthorized in 494345ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-03 11:33:20 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2850556.2ms)
+Completed 200 OK in 2850844ms (Views: 2850837.5ms | ActiveRecord: 0.0ms)
+
+
