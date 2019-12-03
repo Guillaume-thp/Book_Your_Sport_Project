@@ -3,9 +3,9 @@
     <p class="lead text-center">Réserve ton terrain en quelques clics!</p>
     <hr class="my-4">
     <fieldset>
-        <select class="custom-select" width="25%">
+        <select id="sport" class="custom-select" width="25%">
         <option selected="">Choisis ton sport</option>
-        <option value="0">Football</option>
+        <option id="football" value="0">Football</option>
         <option value="1">Basket-ball</option>
         <option value="2">Volley-ball</option>
       </select>
@@ -18,7 +18,8 @@
         <option value="1">Lyon</option>
         <option value="2">Marseille</option>
       </select>
-        <input type="submit" value="Trouver une salle" class="btn btn-success btn-lg">
+        <%= link_to "Trouver une salle", timeslots_path %>
+
 
     </fieldset>
 </div>
