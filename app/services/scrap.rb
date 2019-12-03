@@ -4,7 +4,8 @@ class Scrap
 
 
   def perform
-    browser = Watir::Browser.new(:firefox)
+  	 options = Selenium::WebDriver::Firefox::Options.new(args: ['-headless'])
+  browser = Watir::Browser.new :firefox, options: options
 browser.goto 'https://my.urbansoccer.fr/user?goto=reserver'
 email_field = browser.text_field(type: 'email')
 password_field = browser.text_field(type: 'password')
