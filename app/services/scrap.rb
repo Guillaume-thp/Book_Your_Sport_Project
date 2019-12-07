@@ -27,22 +27,29 @@ idf.double_click
 
 puteaux = browser.div(text: "Puteaux")
 
-puteaux.double_click
+puteaux.wait_until(&:present?).double_click
 # cliquer sur la fleche droite du calendrier pour le mois suivant
  #browser.span(class:["DayPicker-NavButton", "DayPicker-NavButton--next"]).click
 
-date = browser.div(text: "21") # Choisir le jour, A changer par la variable tiré du formulaire de recherche
-date.send_keys('\n') # .click ne fonctionne pas avec chromedriver dans ce cas
 
-#dropdown heure
-browser.element(:xpath => "/html/body/div/div/div/div[4]/div/div/div[2]/div[2]/div[2]/div[2]/div[1]/div/select[1]/option[@value='15h00']").click
+
+#dropdown heuresend_keys('\n')
+
+browser.option(value: "15h00").click
+
 #dropdown durée
-browser.element(:xpath => "/html/body/div/div/div/div[4]/div/div/div[2]/div[2]/div[2]/div[2]/div[1]/div/select[2]/option[@value='120']").click
+browser.option(value: "120").click
+
+date = browser.div(text: "21") # Choisir le jour. Faire en dernier sinon bug sur chrome
+date.click
+
+
 
 #Type de terrain. Remplacer un tiret par un underscore dans un attribut.
-browser.input(data_label:"3 contre 3").click
-binding.irb
-return browser.div(class: "reservation&#45header") #browser.div(class: "reservation-header").text
+browser.span(text:"3 contre 3").click
+
+
+return browser.div(class: "reservation-header").text #browser.div(class: "reservation-header").text
   end
 end
 

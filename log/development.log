@@ -2819,3 +2819,161 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 2850844ms (Views: 2850837.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-12-07 14:33:24 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (36735.5ms)
+Completed 401 Unauthorized in 36746ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-07 14:34:32 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (36909.4ms)
+Completed 401 Unauthorized in 36917ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-07 14:35:30 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (45424.0ms)
+Completed 401 Unauthorized in 45432ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-07 14:36:27 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (62601.8ms)
+Completed 401 Unauthorized in 62610ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-07 14:40:31 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (34055.3ms)
+Completed 500 Internal Server Error in 34063ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (element located, but timed out after 30 seconds, waiting for #<Watir::HTMLElement: located: true; {:xpath=>"/html/body/div/div/div/div[4]/div/div/div[2]/div[2]/div[2]/div[2]/div[1]/div/select[1]/option[@value='15h00']"}> to be present):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:38:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___3894150491633464464_70354050284780'
+Started GET "/" for 127.0.0.1 at 2019-12-07 14:42:07 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4276.0ms)
+Completed 500 Internal Server Error in 4283ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: headless chrome=78.0.3904.108)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:38:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___2672017045876761431_70002836027680'
+Started GET "/" for 127.0.0.1 at 2019-12-07 14:43:20 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (39437.3ms)
+Completed 500 Internal Server Error in 39445ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (element located, but timed out after 30 seconds, waiting for #<Watir::Div: located: false; {:text=>"Puteaux", :tag_name=>"div"}> to be present; Maybe look in an iframe?):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:30:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__3641013261239111929_47451329670780'
+Started GET "/" for 127.0.0.1 at 2019-12-07 14:44:28 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4902.9ms)
+Completed 500 Internal Server Error in 4910ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: headless chrome=78.0.3904.108)):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:38:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___1961344820139030614_47253934591940'
+Started GET "/" for 127.0.0.1 at 2019-12-07 15:57:31 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (38103.4ms)
+Completed 500 Internal Server Error in 38110ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (element located, but timed out after 30 seconds, waiting for #<Watir::Div: located: false; {:text=>"Puteaux", :tag_name=>"div"}> to be present; Maybe look in an iframe?):
+    14: </form>
+    15: </div>
+    16: 
+    17: <p> test affichage heroku  <%=Scrap.new.perform%></p>
+    18:  
+  
+app/services/scrap.rb:30:in `perform'
+app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___1700697165225548124_70348681570620'
+Started GET "/" for 127.0.0.1 at 2019-12-07 16:02:18 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (29990.5ms)
+Completed 200 OK in 30236ms (Views: 30231.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-07 16:04:09 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4874.4ms)
+Completed 200 OK in 4903ms (Views: 4901.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-07 16:04:30 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4650.7ms)
+Completed 200 OK in 4828ms (Views: 4821.8ms | ActiveRecord: 0.0ms)
+
+
